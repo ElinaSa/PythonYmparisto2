@@ -8,6 +8,6 @@ import app
 def test_smallInput(monkeypatch):
     simulatedInput = 'anna-liisa' # Simuloitu käyttäjän syöte
 
-    # Lähetetään simuloitu syöte monkeypatch:n avulla funtiolle
+    # Lähetetään simuloitu syöte monkeypatch:n avulla funktiolle
     monkeypatch.setattr('builtins.input', lambda _: simulatedInput) 
     assert app.askName('Nimi') == 'Anna-Liisa'
