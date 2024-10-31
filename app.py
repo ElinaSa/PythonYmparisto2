@@ -35,9 +35,9 @@ def askName(question: str) -> str:
     return name
 
 
-
+# Varmistetaan, ettei ohjelma käynnisty, kun se tuodaan toiseen moduuliin importilla
 if __name__ == "__main__":
-
+    
     # PÄÄOHJELMAN IKUINEN SILMUKKA
     # ============================
     while True:
